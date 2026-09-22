@@ -74,11 +74,11 @@ Algoritma/Urutan Aksi
                     8a4.    Jika terdapat tulisan baris_ke-[nomor_baris]
                             8a4a.   Maka,       8a4a1.  Lihat tulisan di kanannya
                                                 8a4a2.  Jika warna_kelereng = warna_baris_ke-[nomor_baris]
-                                                        8a4a2a. Maka,       8a4a1a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris + 1]
+                                                        8a4a2a. Maka,       8a4a1a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris] + 1
                                                         8a4a2b. Selain itu, 8a4a2b1.    Lihat baris selanjutnya
                                                                             8a4a2b2.    Replace value nomor_baris dengan nomor_baris + 1
                                                                             8a4a2b3.    kembali ke aksi 8a4.
-                            7a4b.   Selain itu, 8a4b1.  Tulis baris_ke-[nomor_baris] pada baris tersebut
+                            8a4b.   Selain itu, 8a4b1.  Tulis baris_ke-[nomor_baris] pada baris tersebut
                                                 8a4b2.  Tulis warna_baris_ke-[nomor_baris] di kanan baris_ke-[nomor_baris]
                                                 8a4b3.  Tulis jumlah_baris_ke-[nomor_baris] di kanan warna_baris_ke-[nomor_baris]
                     8a5.    Pindahkan kelereng ke wadah B
@@ -117,11 +117,11 @@ Algoritma/Urutan Aksi
                     8a4.    Jika terdapat tulisan baris_ke-[nomor_baris]
                             8a4a.   Maka,       8a4a1.  Lihat tulisan di kanannya
                                                 8a4a2.  Jika warna_kelereng = warna_baris_ke-[nomor_baris]
-                                                        8a4a2a. Maka,       8a4a1a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris + 1]
+                                                        8a4a2a. Maka,       8a4a1a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris] + 1
                                                         8a4a2b. Selain itu, 8a4a2b1.    Lihat baris selanjutnya
                                                                             8a4a2b2.    Replace value nomor_baris dengan nomor_baris + 1
                                                                             8a4a2b3.    kembali ke aksi 8a4.
-                            7a4b.   Selain itu, 8a4b1.  Tulis baris_ke-[nomor_baris] pada baris tersebut
+                            8a4b.   Selain itu, 8a4b1.  Tulis baris_ke-[nomor_baris] pada baris tersebut
                                                 8a4b2.  Tulis warna_baris_ke-[nomor_baris] di kanan baris_ke-[nomor_baris]
                                                 8a4b3.  Tulis jumlah_baris_ke-[nomor_baris] di kanan warna_baris_ke-[nomor_baris]
                     8a5.    Pindahkan kelereng ke wadah B
