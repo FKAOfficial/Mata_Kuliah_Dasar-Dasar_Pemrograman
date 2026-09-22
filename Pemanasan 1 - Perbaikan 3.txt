@@ -20,7 +20,7 @@ Algoritma/Urutan Aksi
                                                         5a3b1a. Maka,       5a3b1a1.    Replace value pada b dengan value b + 1
                                                         5a3b1b. Selain itu, 5a3b1b1.    Replace value pada c dengan value c + 1
                     5a4.    Pindahkan kelereng ke wadah B
-                    5a5.    Replace value pada jumlah_pengambilan dengan value jumlah_pengambilan + 1
+                    5a5.    Replace value pada jumlah_pengambilan dengan jumlah_pengambilan + 1
                     5a6.    Kembali ke Aksi 5.
     6.  Pada baris pertama di halaman pertama pada buku, tulis nilai value a di sebelah kanan "Warna Merah:"
     7.  Pada baris kedua di halaman pertama pada buku, tulis nilai value b di sebelah kanan "Warna Kuning:"
@@ -31,7 +31,8 @@ F.S:
 
 Kedua
 I.S:
-    Diketahui 1sejumlah kelereng di dalam sebuah wadah A yang terdiri atas tiga warna yaitu merah, kuning, dan biru.
+    Diketahui 
+    sejumlah kelereng di dalam sebuah wadah A yang terdiri atas tiga warna yaitu merah, kuning, dan biru.
     Terdapat juga satu wadah tambahan bernama wadah B yang isinya kosong. Tersedia juga buku dan pulpen.
 Algoritma/Urutan Aksi
     1.  Pada baris pertama di halaman pertama pada buku, tulis "Warna Merah:" dan ingat variabel bernama a dengan value 0
@@ -58,11 +59,11 @@ F.S:
 Ketiga
 I.S:
     Diketahui 100 butir kelereng di dalam sebuah wadah A yang terdiri atas warna yang berbeda-beda
-    Terdapat juga satu wadah tambahan bernama wadah B yang isinya kosong. Tersedia juga buku dan pulpen.
+    Terdapat juga satu wadah kosong tambahan bernama wadah B. Tersedia juga buku dan pulpen.
 Algoritma/Urutan Aksi
     1.  Buka halaman pertama buku
     2.  Ingat variabel nomor_baris dengan value 1
-    3.  Ingat variabel warna_kelereng dengan value yang didapat dari input periksa warna kelereng
+    3.  Ingat variabel warna_kelereng dengan value yang didapat dari input: periksa warna kelereng
     4.  Ingat variabel baris_ke-[nomor_baris] dengan value nomor_baris
     5.  Ingat variabel warna_baris_ke-[nomor_baris] dengan value warna_kelereng
     6.  Ingat variabel jumlah_baris_ke-[nomor_baris] dengan value 1
@@ -71,10 +72,10 @@ Algoritma/Urutan Aksi
         8a. Maka    8a1.    Ambil satu kelereng dari wadah A
                     8a2.    Periksa warna pada kelereng tersebut
                     8a3.    Periksa baris pertama pada halaman pertama buku
-                    8a4.    Jika terdapat tulisan baris_ke-[nomor_baris]
-                            8a4a.   Maka,       8a4a1.  Lihat tulisan di kanannya
-                                                8a4a2.  Jika warna_kelereng = warna_baris_ke-[nomor_baris]
-                                                        8a4a2a. Maka,       8a4a1a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris] + 1
+                    8a4.    Jika terdapat tulisan baris_ke-[nomor_baris] di kertas
+                            8a4a.   Maka,       8a4a1.  Lihat tulisan warna_baris_ke-[nomor_baris] di kanannya
+                                                8a4a2.  Jika warna_kelereng = "warna_baris_ke-[nomor_baris]" (yang ada di buku)
+                                                        8a4a2a. Maka,       8a4a2a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris] + 1
                                                         8a4a2b. Selain itu, 8a4a2b1.    Lihat baris selanjutnya
                                                                             8a4a2b2.    Replace value nomor_baris dengan nomor_baris + 1
                                                                             8a4a2b3.    kembali ke aksi 8a4.
@@ -82,30 +83,30 @@ Algoritma/Urutan Aksi
                                                 8a4b2.  Tulis warna_baris_ke-[nomor_baris] di kanan baris_ke-[nomor_baris]
                                                 8a4b3.  Tulis jumlah_baris_ke-[nomor_baris] di kanan warna_baris_ke-[nomor_baris]
                     8a5.    Pindahkan kelereng ke wadah B
-                    8a6.    Replace value pada jumlah_pengambilan dengan value jumlah_pengambilan + 1
+                    8a6.    Replace value pada jumlah_pengambilan dengan jumlah_pengambilan + 1
                     8a7.    Set value nomor_baris menjadi 1
                     8a8.    Kembali ke Aksi 8.
     9.  Periksa baris pertama pada halaman pertama buku
-    10  Set value baris_ke-[nomor_baris] ke 1
-    11. Periksa baris_ke-[nomor_baris] di baris pertama pada halaman pertama buku
-    12. Jika baris_ke-[nomor_baris+1] tidak sama dengan Null (Kosong)
-        12a. Maka,  12a1.   Periksa baris_ke-[nomor_baris + 1]
-                    12a2.   Kembali ke Aksi 11.
-    13. Tulis "Jumlah jenis warna:" di bawah eksekusi Terakhir
-    14. di kanan tulisan "Jumlah jenis warna:", Tulis baris_ke-[nomor_baris]
+    10. Periksa baris_ke-[nomor_baris] di baris pertama pada halaman pertama buku
+    11. Jika baris_ke-[nomor_baris+1] tidak sama dengan Null (Kosong)
+        11a. Maka,  11a1.   Replace nomor_baris dengan nomor_baris + 1
+                    11a2.   Periksa baris_ke-[nomor_baris] di buku
+                    11a3.   Kembali ke Aksi 11.
+    12. Tulis "Jumlah jenis warna:" di bawah eksekusi Terakhir
+    13. di kanan tulisan "Jumlah jenis warna:", Tulis value dari baris_ke-[nomor_baris]
 F.S:
     Jumlah jenis warna dan jumlah kelereng pada setiap warna sudah diketahui.
     Wadah A menjadi Kosong dan Wadah B berisi 100 kelereng dengan warna yang berbeda-beda
     Buku menjadi berisi list berbagai jenis warna dan Jumlah jenis warna
 
-Tanatngan
+Tanatangan
 I.S:
     Diketahui sejumlah kelereng di dalam sebuah wadah A yang terdiri atas warna yang berbeda-beda
-    Terdapat juga satu wadah tambahan bernama wadah B yang isinya kosong. Tersedia juga buku dan pulpen.
+    Terdapat juga satu wadah kosong tambahan bernama wadah B. Tersedia juga buku dan pulpen.
 Algoritma/Urutan Aksi
     1.  Buka halaman pertama buku
     2.  Ingat variabel nomor_baris dengan value 1
-    3.  Ingat variabel warna_kelereng dengan value yang didapat dari input periksa warna kelereng
+    3.  Ingat variabel warna_kelereng dengan value yang didapat dari input: periksa warna kelereng
     4.  Ingat variabel baris_ke-[nomor_baris] dengan value nomor_baris
     5.  Ingat variabel warna_baris_ke-[nomor_baris] dengan value warna_kelereng
     6.  Ingat variabel jumlah_baris_ke-[nomor_baris] dengan value 1
@@ -114,10 +115,10 @@ Algoritma/Urutan Aksi
         8a. Maka    8a1.    Ambil satu kelereng dari wadah A
                     8a2.    Periksa warna pada kelereng tersebut
                     8a3.    Periksa baris pertama pada halaman pertama buku
-                    8a4.    Jika terdapat tulisan baris_ke-[nomor_baris]
-                            8a4a.   Maka,       8a4a1.  Lihat tulisan di kanannya
-                                                8a4a2.  Jika warna_kelereng = warna_baris_ke-[nomor_baris]
-                                                        8a4a2a. Maka,       8a4a1a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris] + 1
+                    8a4.    Jika terdapat tulisan baris_ke-[nomor_baris] di kertas
+                            8a4a.   Maka,       8a4a1.  Lihat tulisan warna_baris_ke-[nomor_baris] di kanannya
+                                                8a4a2.  Jika warna_kelereng = "warna_baris_ke-[nomor_baris]" (yang ada pada buku)
+                                                        8a4a2a. Maka,       8a4a2a1.    Replace jumlah_baris_ke-[nomor_baris] dengan jumlah_baris_ke-[nomor_baris] + 1
                                                         8a4a2b. Selain itu, 8a4a2b1.    Lihat baris selanjutnya
                                                                             8a4a2b2.    Replace value nomor_baris dengan nomor_baris + 1
                                                                             8a4a2b3.    kembali ke aksi 8a4.
@@ -128,14 +129,14 @@ Algoritma/Urutan Aksi
                     8a6.    Set value nomor_baris menjadi 1
                     8a7.    Kembali ke Aksi 7.
     9.  Periksa baris pertama pada halaman pertama buku
-    10  Set value baris_ke-[nomor_baris] ke 1
-    11. Periksa baris_ke-[nomor_baris] di baris pertama pada halaman pertama buku
-    12. Jika baris_ke-[nomor_baris+1] tidak sama dengan Null (Kosong)
-        12a. Maka,  12a1.   Periksa baris_ke-[nomor_baris + 1]
-                    12a2.   Kembali ke Aksi 11.
-    13. Tulis "Jumlah jenis warna:" di bawah eksekusi Terakhir
-    14. di kanan tulisan "Jumlah jenis warna:", Tulis baris_ke-[nomor_baris]
+    10. Periksa baris_ke-[nomor_baris] di baris pertama pada halaman pertama buku
+    11. Jika baris_ke-[nomor_baris+1] tidak sama dengan Null (Kosong)
+        11a. Maka,  11a1.   Replace nomor_baris dengan nomor_baris + 1
+                    11a2.   Periksa baris_ke-[nomor_baris] di buku
+                    11a3.   Kembali ke Aksi 11.
+    12. Tulis "Jumlah jenis warna:" di bawah eksekusi Terakhir
+    13. di kanan tulisan "Jumlah jenis warna:", Tulis value dari baris_ke-[nomor_baris]
 F.S:
     Jumlah jenis warna dan jumlah kelereng pada setiap warna sudah diketahui.
-    Wadah A menjadi Kosong dan Wadah B berisi 100 kelereng dengan warna yang berbeda-beda
+    Wadah A menjadi Kosong dan Wadah B berisi sejumlah kelereng dengan warna yang berbeda-beda
     Buku menjadi berisi list berbagai jenis warna dan Jumlah jenis warna
