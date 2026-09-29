@@ -1,0 +1,167 @@
+DDP-(P) Pemanasan-Perbaikan 2
+Nama    : Fairuz Khalil Azmi
+NIM     : 261524043
+
+Pertama
+I.S:
+    Diketahui 100 butir kelereng di dalam sebuah wadah A yang terdiri atas tiga warna yaitu merah, kuning, dan biru.
+    Terdapat juga satu wadah tambahan bernama wadah B yang isinya kosong. Tersedia juga buku dan pulpen.
+    -   Deklarasi
+    a, b, c adalah variabel tunggal bertipe integer
+    jumlah_pengambilan adalah variabel tunggal bertipe integer
+    a <- 0
+    b <- 0
+    c <- 0
+    jumlah_pengambilan <- 0
+Algoritma/Urutan Aksi
+    1.  Pada baris pertama di halaman pertama pada buku, tulis "Warna Merah: "
+    2.  Pada baris kedua di halaman pertama pada buku, tulis "Warna Kuning: "
+    3.  Pada baris ketiga di halaman pertama pada buku, tulis "Warna Biru: "
+    4.  Jika variabel jumlah_pengambilan di bawah 100,
+        4a. Maka    4a1.    Ambil satu kelereng dari wadah A
+                    4a2.    Periksa warna pada kelereng tersebut
+                    4a3.    Jika kelereng berwarna merah
+                            4a3a.   Maka,       4a3a1.  a <- a + 1
+                            4a3b.   Selain itu, 4a3b1.  Jika kelereng berwarna kuning
+                                                        4a3b1a. Maka,       4a3b1a1.    b <- b + 1
+                                                        4a3b1b. Selain itu, 4a3b1b1.    c <- c + 1
+                    4a4.    Pindahkan kelereng ke wadah B
+                    4a5.    jumlah_pengambilan <- jumlah_pengambilan + 1
+                    4a6.    Kembali ke Aksi 4.
+    5.  Pada baris pertama di halaman pertama pada buku, tulis nilai dari a di kanan "Warna Merah: "
+    6.  Pada baris kedua di halaman pertama pada buku, tulis nilai dari b di kanan "Warna Kuning: "
+    7.  Pada baris ketiga di halaman pertama pada buku, tulis nilai dari c di kanan "Warna Biru: "
+F.S:
+    Jumlah kelereng pada setiap warna sudah diketahui.
+    Wadah A menjadi Kosong dan Wadah B berisi 100 kelereng berwarna merah, kuning, dan biru.
+    nilai a, b, c telah berubah
+    nilai jumlah_pengambilan sudah 100
+
+Kedua
+I.S:
+    Diketahui 
+    sejumlah kelereng di dalam sebuah wadah A yang terdiri atas tiga warna yaitu merah, kuning, dan biru.
+    Terdapat juga satu wadah tambahan bernama wadah B yang isinya kosong. Tersedia juga buku dan pulpen.
+    -   Deklarasi
+    a, b, c adalah variabel tunggal bertipe integer
+    a <- 0
+    b <- 0
+    c <- 0
+Algoritma/Urutan Aksi
+    1.  Pada baris pertama di halaman pertama pada buku, tulis "Warna Merah: "
+    2.  Pada baris kedua di halaman pertama pada buku, tulis "Warna Kuning: "
+    3.  Pada baris ketiga di halaman pertama pada buku, tulis "Warna Biru: "
+    4.  Periksa wadah A
+    5.  Jika ada kelereng
+        5a. Maka    5a1.    Ambil satu kelereng dari wadah A
+                    5a2.    Periksa warna pada kelereng tersebut
+                    5a3.    Jika kelereng berwarna merah
+                            5a3a.   Maka,       5a3a1.  a <- a + 1
+                            5a3b.   Selain itu, 5a3b1.  Jika kelereng berwarna kuning
+                                                        5a3b1a. Maka,       5a3b1a1.    b <- b + 1
+                                                        5a3b1b. Selain itu, 5a3b1b1.    c <- c + 1
+                    5a4.    Pindahkan kelereng ke wadah B
+                    5a5.    Kembali ke Aksi 4.
+    6.  Pada baris pertama di halaman pertama pada buku, tulis nilai dari a di sebelah kanan "Warna Merah: "
+    7.  Pada baris kedua di halaman pertama pada buku, tulis nilai dari b di sebelah kanan "Warna Kuning: "
+    8.  Pada baris ketiga di halaman pertama pada buku, tulis nilai dari c di sebelah kanan "Warna Biru: "
+F.S:
+    Jumlah kelereng pada setiap warna sudah diketahui.
+    Wadah A menjadi Kosong dan Wadah B berisi sejumlah kelereng berwarna merah, kuning, dan biru.
+    nilai a, b, c telah berubah
+
+Ketiga
+I.S:
+    Diketahui 100 butir kelereng di dalam sebuah wadah A yang terdiri atas warna yang berbeda-beda
+    Terdapat juga satu wadah kosong tambahan bernama wadah B. Tersedia juga buku dan pulpen.
+    -   Deklarasi
+    nomor_baris, jumlah_pengambilan, jumlah_semua_baris adalah variabel tunggal bertipe integer
+    baris_ke-[nomor_baris], jumlah_kelereng_pada_baris_ke-[nomor_baris] adalah variabel array bertipe integer
+    hasil_periksa_warna adalah variabel tunggal hasil input periksa warna pada kelereng yang bertipe string
+    nomor_baris <- 1
+    jumlah_pengambilan <- 0
+    jumlah_semua_baris <- 0
+    jumlah_kelereng_pada_baris_ke-[nomor_baris] <- 0
+    baris_ke-[nomor_baris] <- nomor_baris
+Algoritma/Urutan Aksi
+    1.  Buka halaman pertama buku
+    2.  Jika variabel jumlah_pengambilan di bawah 100,
+        2a. Maka    2a1.    Ambil satu kelereng dari wadah A
+                    2a2.    Periksa warna pada kelereng tersebut
+                    2a3.    Periksa baris pertama pada halaman pertama buku
+                    2a4.    Jika terdapat tulisan
+                            2a4a.   Maka,       2a4a1.  Lihat tulisan warna di kanannya
+                                                2a4a2.  Jika tulisan warna == hasil_periksa_warna
+                                                        2a4a2a. Maka,       2a4a2a1.    jumlah_kelereng_pada_baris_ke-[nomor_baris] <- jumlah_kelereng_pada_baris_ke-[nomor_baris] + 1
+                                                                            2a4a2a1.    Replace nilai jumlah_kelereng_pada_baris_ke-[nomor_baris] di kanan kata "Jumlah: "
+                                                        2a4a2b. Selain itu, 2a4a2b1.    Lihat baris di bawahnya (selanjutnya)
+                                                                            2a4a2b2.    nomor_baris <- nomor_baris + 1
+                                                                            2a4a2b3.    kembali ke aksi 2a4.
+                            2a4b.   Selain itu, 2a4b1.  Tulis nilai nomor_baris pada baris tersebut
+                                                2a4b2.  Tulis nilai hasil_periksa_warna di kanan nilai nomor_baris
+                                                2a4b3.  Tulis "Jumlah: " di kanan nilai nomor_baris
+                                                2a4b4.  jumlah_kelereng_pada_baris_ke-[nomor_baris] <- jumlah_kelereng_pada_baris_ke-[nomor_baris] + 1
+                                                2a4b5.  Tulis nilai jumlah_kelereng_pada_baris_ke-[nomor_baris] di kanan kata "Jumlah: "
+                    2a5.    Pindahkan kelereng ke wadah B
+                    2a6.    jumlah_pengambilan <- jumlah_pengambilan + 1
+                    2a7.    nomor_baris <- 1
+                    2a8.    Kembali ke Aksi 2.
+    3.  Periksa baris pertama pada halaman pertama buku
+    4. Jika baris_ke-[nomor_baris] !== Null
+        4a. Maka,   4a1.    jumlah_semua_baris <- jumlah_semua_baris + 1
+                    4a2.    nomor_baris <- nomor_baris + 1
+                    4a3.    Kembali ke Aksi 4.
+    5. Tulis "Jumlah jenis warna:" di halaman berikutnya di buku
+    6. di kanan tulisan "Jumlah jenis warna:", Tulis nilai dari jumlah_semua_baris
+F.S:
+    Jumlah jenis warna dan jumlah kelereng pada setiap warna sudah diketahui.
+    Wadah A menjadi Kosong dan Wadah B berisi 100 kelereng dengan warna yang berbeda-beda
+    Buku menjadi berisi list berbagai jenis warna dan Jumlah jenis warna
+    nilai jumlah_pengambilan sudah 100
+
+Tanatangan
+I.S:
+    Diketahui sejumlah kelereng di dalam sebuah wadah A yang terdiri atas warna yang berbeda-beda
+    Terdapat juga satu wadah kosong tambahan bernama wadah B. Tersedia juga buku dan pulpen.
+    -   Deklarasi
+    nomor_baris, jumlah_semua_baris adalah variabel tunggal bertipe integer
+    baris_ke-[nomor_baris], jumlah_kelereng_pada_baris_ke-[nomor_baris] adalah variabel array bertipe integer
+    hasil_periksa_warna adalah variabel tunggal hasil input periksa warna pada kelereng yang bertipe string
+    nomor_baris <- 1
+    jumlah_semua_baris <- 0
+    jumlah_kelereng_pada_baris_ke-[nomor_baris] <- 0
+    baris_ke-[nomor_baris] <- nomor_baris
+Algoritma/Urutan Aksi
+    1.  Buka halaman pertama buku
+    2.  Periksa wadah A
+    3.  Jika ada kelereng
+        3a. Maka    3a1.    Ambil satu kelereng dari wadah A
+                    3a2.    Periksa warna pada kelereng tersebut
+                    3a3.    Periksa baris pertama pada halaman pertama buku
+                    3a4.    Jika terdapat tulisan
+                            3a4a.   Maka,       3a4a1.  Lihat tulisan warna di kanannya
+                                                3a4a2.  Jika tulisan warna == hasil_periksa_warna
+                                                        3a4a2a. Maka,       3a4a2a1.    jumlah_kelereng_pada_baris_ke-[nomor_baris] <- jumlah_kelereng_pada_baris_ke-[nomor_baris] + 1
+                                                                            3a4a2a2.    Replace nilai jumlah_kelereng_pada_baris_ke-[nomor_baris] di kanan kata "Jumlah: "
+                                                        3a4a2b. Selain itu, 3a4a2b1.    Lihat baris di bawahnya (selanjutnya)
+                                                                            3a4a2b2.    nomor_baris <- nomor_baris + 1
+                                                                            3a4a2b3.    kembali ke aksi 3a4.
+                            3a4b.   Selain itu, 3a4b1.  Tulis nilai nomor_baris pada baris tersebut
+                                                3a4b2.  Tulis nilai hasil_periksa_warna di kanan nilai nomor_baris
+                                                3a4b3.  Tulis "Jumlah: " di kanan nilai nomor_baris
+                                                3a4b4.  jumlah_kelereng_pada_baris_ke-[nomor_baris] <- jumlah_kelereng_pada_baris_ke-[nomor_baris] + 1
+                                                3a4b5.  Tulis nilai jumlah_kelereng_pada_baris_ke-[nomor_baris] di kanan kata "Jumlah: "
+                    3a5.    Pindahkan kelereng ke wadah B
+                    3a6.    nomor_baris <- 1
+                    3a7.    Kembali ke Aksi 2.
+    4.  Periksa baris pertama pada halaman pertama buku
+    5.  Jika baris_ke-[nomor_baris] !== Null 
+        5a. Maka,   5a1.    jumlah_semua_baris <- jumlah_semua_baris + 1
+                    5a2.    nomor_baris <- nomor_baris + 1
+                    5a3.    Kembali ke Aksi 5.
+    6. Tulis "Jumlah jenis warna:" di halaman berikutnya di buku
+    7. di kanan tulisan "Jumlah jenis warna:", Tulis nilai dari jumlah_semua_baris
+F.S:
+    Jumlah jenis warna dan jumlah kelereng pada setiap warna sudah diketahui.
+    Wadah A menjadi Kosong dan Wadah B berisi sejumlah kelereng dengan warna yang berbeda-beda
+    Buku menjadi berisi list berbagai jenis warna pada halaman pertama dan Jumlah jenis warna pada halaman berikutnya
