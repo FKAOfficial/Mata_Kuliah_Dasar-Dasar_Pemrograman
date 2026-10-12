@@ -1,0 +1,67 @@
+Kelompok 
+    Anggota
+    Fairuz
+    Najmi
+    Rania
+
+Menggunakan Array
+
+Kamus data
+    type Siswa : record
+       <Nama          : string
+        Asal_sekolah  : string
+        Jenis_kelamin : char
+        Tinggi_badan  : real
+        Uang          : real>
+    P adalah variabel komposit bertipe Siswa
+    NP adalah variabel komposit bertipe array Siswa 1 dimensi dengan 100 elemen
+    NR adalah variabel array 1 dimensi bertipe string dengan maksimal 100 elemen
+    i adalah variabel tunggal bertipe integer
+
+
+
+
+
+    n, m : integer
+    n <- 1
+    m <- 1
+    
+I.S
+    1. Terdapat sebuah file excel berisi Sheet 1 dan Sheet 2 yang telah terbuka di laptop
+    2. Dalam Sheet 1, Terdapat Data 100 Siswa yang memiliki kolom "Nama", "Asal Kota", "Jenis Kelamin", dan "Uang di Dompet"
+    3. Dalam Sheet 2, Isinya kosong
+    4. Nilai i tidak diketahui
+
+Algoritma
+    for(i=1; i<100; i++)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    1.  Lihat sel pada kolom "Nama" pada baris n
+    2.  Jika huruf pertama adalah "M"
+        Maka,   2a. Nama <- (Nama pada sel)
+                2b. Lihat sel pada kolom "Asal Kota" pada baris n
+                2c. Jika sel berisi "Bandung"
+                    Maka,   2c1. Lihat sel pada kolom "Jenis Kelamin" pada baris n 
+                            2c2. Jika sel berisi "L"
+                                 Maka,  2c2a. Lihat sel pada kolom "Uang di Dompet" pada baris n
+                                        2c2b. Jika sel berisi nilai >= 75.000
+                                              Maka, 2c2b1. Buka Sheet 2
+                                                    2c2b2. Pada baris m, tulis Nilai Nama
+                                                    2c2b3. m <- m+1
+                                                    2c2b4. Buka Sheet 1
+    3.  n <- n+1
+    4.  ulangi perintah 1 sebanyak 99 kali.
+
+F.S
+    1. Terdapat sebuah file excel berisi Sheet 1 dan Sheet 2 yang telah terbuka di laptop
+    2. Dalam Sheet 1, Terdapat Data 100 Siswa yang memiliki kolom "Nama", "Asal Kota", "Jenis Kelamin", dan "Uang di Dompet"
+    3. Dalam Sheet 2, Sudah terisi daftar siswa yang
+    4. Nilai Nama tidak diketahui
